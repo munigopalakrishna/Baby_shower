@@ -78,16 +78,17 @@
     position: absolute; inset: 0; z-index: 2;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 26px;
   }
 
   .h-eyebrow {
     font-size: 9px; letter-spacing: 5px; text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.88); margin-bottom: 4px;
+    color: rgba(255,255,255,0.88); margin-bottom: 4px;
   }
   .h-title {
     font-family: 'DejaVu Serif', Georgia, serif; font-style: italic;
-    font-size: 60px; color: #fff; line-height: 0.95;
+    font-size: 50px; color: #fff; line-height: 0.95;
+    text-shadow: 0 2px 14px rgba(80,50,140,0.3); margin-bottom: 5px;
     text-shadow:
       1px 1px 0 #000,
       2px 2px 0 #1a1a2e,
@@ -97,8 +98,6 @@
       6px 6px 8px rgba(0,0,0,0.5),
       0 0 20px rgba(255,200,240,0.4);
     -webkit-text-stroke: 0.5px rgba(0,0,0,0.6);
-    paint-order: stroke fill;
-    margin-bottom: 5px;
   }
   .h-title.tamil {
     font-size: 28px;
@@ -107,19 +106,17 @@
     text-align: center;
     letter-spacing: 2px;
     color: #fff;
-    text-shadow:
-      1px 1px 0 #000,
-      2px 2px 0 #1a1a2e,
-      3px 3px 0 #2a1a4e,
-      4px 4px 0 #3a2060,
-      5px 5px 0 #4a2878,
-      6px 6px 8px rgba(0,0,0,0.5),
-      0 0 20px rgba(255,200,240,0.4);
-    -webkit-text-stroke: 0.5px rgba(0,0,0,0.6);
     paint-order: stroke fill;
   }
+
+  .h-sub.tamil {
+    font-weight: 700 !important;
+    font-size: 10px;
+    color: #000 !important;
+    -webkit-text-fill-color: #000;
+  }
   .h-sub {
-    font-size: 11px; color: rgba(0, 0, 0, 0.9);
+    font-size: 12px; color: rgba(255,240,255,0.9);
     letter-spacing: 2px; font-style: italic;
   }
 
@@ -156,7 +153,7 @@
     letter-spacing: 0.5px;
   }
 
-  .invite-line.tamil { font-weight: 800 !important; font-size: 14px; }
+  .invite-line.tamil { font-weight: 800 !important; font-size: 11px; }
   .invite-sub { font-weight: 700 !important; font-size: 10px; }
   .names-title.tamil { font-weight: 900 !important; font-size: 17px; }
   .names-note.tamil { font-weight: 700 !important; font-size: 10px; }
@@ -165,7 +162,7 @@
   .footer-quote.tamil { font-weight: 800 !important; }
   .h-eyebrow.tamil { font-weight: 800 !important; letter-spacing: 2px; font-size: 10px; }
   .h-sub.tamil { font-weight: 700 !important; font-size: 10px; }
-  .pill-tag.tamil { font-weight: 900 !important; font-size: 8px; }
+  .pill-tag.tamil { font-weight: 900 !important; font-size: 10px; }
 
   /* Ganapathy icon */
   .ganapathy {
@@ -175,7 +172,7 @@
   }
   .ganapathy img {
     width: 40px;
-    height: 35px;
+    height: 30px;
     object-fit: contain;
     filter: drop-shadow(0 1px 3px rgba(0,0,0,0.35));
     animation: bob 3s ease-in-out infinite;
@@ -214,7 +211,7 @@
   /* Tamil groom block */
   .groom-name {
     font-family: 'Noto Sans Tamil', Arial Unicode MS, sans-serif;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 900;
     color: #304070;
     line-height: 1.3;
@@ -250,7 +247,7 @@
     font-weight: 800;
   }
   .invite-thanks {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 700;
     color: #9070a0;
     margin-top: 4px;
@@ -272,7 +269,7 @@
 
   .invite-line {
     font-family: 'DejaVu Serif', Georgia, serif;
-    font-size: 18px; color: #3a5080; line-height: 1.3; margin-bottom: 5px;
+    font-size: 18px; color: #304070; line-height: 1.3; margin-bottom: 5px;
   }
   .invite-sub {
     display: block; font-size: 10px; font-style: italic;
@@ -282,20 +279,20 @@
   .pill-tag {
     background: linear-gradient(90deg, #c8e4ff, #ffc8e4);
     border-radius: 50px; padding: 4px 16px;
-    font-size: 9px; letter-spacing: 0.5px; text-transform: uppercase;
+    font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
     color: #6070a8; font-weight: bold; margin-bottom: 6px;
     border: 1px solid rgba(130,160,220,0.35);
   }
   .names-title {
     font-family: 'DejaVu Serif', Georgia, serif;
-    font-size: 22px; color: #304070; line-height: 1.25; margin-bottom: 4px;
+    font-size: 22px; color: #304070; line-height: 1.25; margin: 10px 0px;
   }
   .names-note {
-    color: #9070a0; font-style: italic; line-height: 1.2;
+    font-size: 11px; color: #9070a0; font-style: italic; line-height: 1.4;
   }
 
   /* Wavy separator */
-  .wavy-sep { margin: 8px 0 0 0; line-height: 0; }
+  .wavy-sep { margin: 8px 0; line-height: 0; }
   .wavy-sep svg { display: block; width: 100%; }
 
   /* ===== PICTURE + DETAILS SECTION ===== */
@@ -368,7 +365,7 @@
   /* ===== FOOTER ===== */
   .footer {
     margin: 10px 14px 14px;
-    border-radius: 16px; padding: 11px 16px; text-align: center;
+    border-radius: 16px; padding: 11px 14px; text-align: center;
     position: relative; overflow: hidden;
     background: linear-gradient(135deg, #7ab8e8 0%, #b09ad8 50%, #e882b8 100%);
   }
@@ -380,14 +377,79 @@
     position: absolute; width: 70px; height: 70px; border-radius: 50%;
     background: rgba(255,255,255,0.14); bottom: -25px; left: -15px;
   }
-  .footer-emoji { font-size: 20px; letter-spacing: 5px; margin-bottom: 5px; position: relative; }
+
+  /* Footer inner layout: text left 70%, QR right 30% */
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+  }
+
+  .footer-text-col {
+    text-align: left;
+  }
+
+  .footer-emoji { font-size: 18px; letter-spacing: 4px; margin-bottom: 4px; text-align: center;}
   .footer-quote {
     font-family: 'DejaVu Serif', Georgia, serif; font-style: italic;
-    font-size: 11px; color: rgba(255,245,255,0.96); line-height: 1.55; position: relative;
+    font-size: 10px; color: rgba(255,245,255,0.96); line-height: 1.55;
+    text-align: center;
   }
   .footer-tag {
-    font-size: 8px; letter-spacing: 3px; text-transform: uppercase;
-    color: rgba(255,235,255,0.72); margin-top: 5px; position: relative;
+    text-align: center;
+    font-size: 9px; letter-spacing: 2px; text-transform: uppercase;
+    color: rgba(255,235,255,0.72); margin-top: 4px;
+  }
+
+  /* QR click button 30% */
+  .qr-btn {
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .qr-box {
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.25);
+    filter: blur(1.2px);
+    transition: filter 0.2s;
+  }
+
+  .qr-btn:hover .qr-box { filter: blur(0.3px); }
+
+  .qr-cell { border-radius: 1px; background: #1a1a2e; }
+  .qr-cell.w { background: #fff; }
+
+  .qr-label {
+    font-size: 8px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: rgba(0,0,0,0.25);
+    padding: 2px 6px;
+    border-radius: 8px;
+    white-space: nowrap;
+  }
+
+  .qr-sub {
+    font-size: 7px;
+    color: rgba(255,255,255,0.7);
+    letter-spacing: 0.5px;
   }
 </style>
 </head>
@@ -408,17 +470,17 @@
     <div class="baby-float">🧸</div>
 
     <div class="lang-toggle" id="langBtn" onclick="toggleLang()">
-      <span class="lang-en">ENGLISH</span>
+      <span class="lang-en">EN</span>
       <span class="lang-divider">|</span>
-      <span class="lang-ta">தமிழ்</span>
+      <span class="lang-ta">தி</span>
     </div>
 
     <div class="header-content">
-      <div class="h-eyebrow english"style="margin-top: 30px">You're invited to a</div>
+      <div class="h-eyebrow english">You're invited to</div>
       <div class="ganapathy tamil"><img src="data:image/png;base64,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" alt="Ganapathy"/></div>
-      <div class="h-title english" style="margin-top: 10px">Baby Shower</div>
+      <div class="h-title english" style="margin-top: 10px; font-size: 55px;">Baby Shower</div>
       <div class="h-title tamil">வளைகாப்பு விழா<br>அழைப்பிதழ்</div>
-      <div class="h-sub english" style="margin-top: 10px">a new little star is on the way ✨</div>
+      <div class="h-sub english" style="margin-top: 15px">a new little star is on the way ✨</div>
       <div class="h-sub tamil">ஒரு புதிய நட்சத்திரம் வருகிறது ✨</div>
     </div>
 
@@ -435,22 +497,34 @@
   <!-- ===== BODY: Invite & Names ===== -->
   <div class="body">
     <div class="invite-line english">
-      <div class="groom-name english-groom">Mr. T Angappan &amp; Mrs. A Sujatha</div>
+      <div class="groom-name english-groom">Mr. T. Angappan &amp; Mrs. A. Sujatha</div>
       <div class="groom-sub english-groom">Their Daughter</div>
     </div>
 
     <!-- Tamil: Parents -->
-    <div class="groom-name tamil">திரு. தி. அங்கப்பன் &amp; திருமதி. அ. சுஜாதா<br><span class="groom-sub">அவர்களின் மகள்</span></div>
+    <div class="invite-line tamil">திரு. தி. அங்கப்பன் &amp; திருமதி. அ. சுஜாதா<br><span class="invite-sub">அவர்களின் மகள்</span></div>
+
+    <!-- English: In-laws -->
+    <div class="groom-block english">
+      <div class="groom-name english-groom">Mr. N.V. Srinivasan &amp; Mrs. P. Anuradha</div>
+      <div class="groom-sub english-groom">Their Daughter-in-law</div>
+    </div>
 
     <!-- English: Groom -->
     <div class="groom-block english">
-      <div class="groom-name english-groom">Mr. S Muni Gopala Krishna</div>
+      <div class="groom-name english-groom">Mr. S. Muni Gopala Krishna</div>
       <div class="groom-sub english-groom">His Wife</div>
+    </div>
+
+    <!-- Tamil: In-laws -->
+    <div class="groom-block tamil">
+      <div class="groom-name">திரு. நா. வெ. சினிவாசன் &amp; திருமதி. ப. அனுராதா</div>
+      <div class="groom-sub">அவர்களின் மருமகள்</div>
     </div>
 
     <!-- Tamil: Groom -->
     <div class="groom-block tamil">
-      <div class="groom-name">திரு. சி. முனி கோபால கிருஷ்ணா</div>
+      <div class="groom-name">சி. முனி கோபால கிருஷ்ணா</div>
       <div class="groom-sub">அவர்களின் மனைவி</div>
     </div>
 
@@ -459,17 +533,17 @@
     <div class="pill-tag tamil">💝 சௌபாக்கியவதி</div><br>
 
     <!-- Names -->
-    <div class="names-title english">Mrs. T A Sangamithra</div>
-    <div class="names-title tamil">திருமதி. தி. அ. சங்கமித்ரா</div>
+    <div class="names-title english">Mrs. T. A. Sangamithra</div>
+    <div class="names-title tamil">தி. அ. சங்கமித்ரா</div>
 
-    <!-- Notes --><br>
-    <div class="names-note english" style:"font-size: 20px">We can't wait to meet their little one! 💛</div>
+    <!-- Notes -->
+    <div class="names-note english">We can't wait to meet their little one! 💛</div>
     <div class="names-note tamil">அவர்களின் குழந்தையை வரவேற்க காத்திருக்கிறோம்! 💛</div>
 
     <!-- English invite paragraph -->
     <div class="invite-para english">
       Dear family &amp; friends, we cordially invite you to our joyful Baby Shower celebration
-      <div class="invite-thanks">Welcome..!!!</div>
+      <div class="invite-thanks">Welcome Once Again ...!!!</div>
     </div>
 
     <!-- Tamil invite paragraph -->
@@ -524,8 +598,8 @@
           <div class="d-label purple english">Venue</div>
           <div class="d-label purple tamil">இடம்</div>
         </div>
-        <div class="d-val english">Anbupriya Vaniyar Samudhaya Koodam, Thirunagar Colony, Next to Subramanya Swamy Temple,<br>Erode - 638003.</div>
-        <div class="d-val tamil">அன்புப்பிரியா வாணியர் சமுதாய கூடம், திருநகர் காலனி, சுப்பிரமணிய சாமி கோயில் அருகில்,<br>ஈரோடு - 638003.</div>
+        <div class="d-val english">Anbupriyal Vaniyar Samudhaya Koodam, Park Road, Next to Subramanya Swamy Temple,<br>Erode - 638003.</div>
+        <div class="d-val tamil">அன்புப்பிரியால் வாணியர் சமுதாய கூடம், பார்க் ரோட், சுப்பிரமணிய சுவாமி கோயில் அருகில்,<br>ஈரோடு - 638003.</div>
       </div>
 
     </div>
@@ -541,10 +615,31 @@
   <div class="footer">
     <div class="footer-circle1"></div>
     <div class="footer-circle2"></div>
-    <div class="footer-emoji">💙 🧸 🎀 🍼 🌸</div>
-    <div class="footer-quote english">"A little one to have and hold, a story just beginning to unfold."</div>
-    <div class="footer-quote tamil">"சின்னஞ்சிறு கையை பிடிக்க, ஒரு புதிய கதை தொடங்குகிறது."</div>
-    <div class="footer-tag">· join us in the joy ·</div>
+    <div class="footer-inner">
+
+      <!-- Left: quote & emoji -->
+      <div class="footer-text-col">
+        <div class="footer-emoji">💙 🧸 🎀 🍼 🌸</div>
+        <div class="footer-quote english">"A little one to have and hold,<br>a story just beginning to unfold."</div>
+        <div class="footer-quote tamil">"சின்னஞ்சிறு கையை பிடிக்க,<br>ஒரு புதிய கதை தொடங்குகிறது."</div>
+        <div class="footer-tag">· join us in the joy ·</div>
+      </div>
+
+      <!-- Right: QR blur button -->
+      <a class="qr-btn" href="https://maps.app.goo.gl/KKnTcRagudmCiQSH6" target="_blank">
+        <div class="qr-box">
+          <!-- Simulated QR pattern -->
+          <div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+          <div class="qr-cell"></div><div class="qr-cell w"></div><div class="qr-cell"></div><div class="qr-cell w"></div><div class="qr-cell"></div>
+          <div class="qr-cell"></div><div class="qr-cell w"></div><div class="qr-cell w"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+          <div class="qr-cell"></div><div class="qr-cell w"></div><div class="qr-cell"></div><div class="qr-cell w"></div><div class="qr-cell"></div>
+          <div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div><div class="qr-cell"></div>
+        </div>
+        <div class="qr-label">📍 Click Here</div>
+        <div class="qr-sub">View Location</div>
+      </a>
+
+    </div>
   </div>
 
 </div>
